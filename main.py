@@ -22,8 +22,8 @@ def passwd_check(passwd):
             print('Entered Password must contain at least one numerical digit')
         if not (any(specht.search(passwd) for x in passwd)):
             print('Entered Password must contain at least one special character')
-        if (len(passwd) < 11):
-            print('Entered Password must contain more than 10 characters')
+        if (len(passwd) < 15):
+            print('Entered Password must contain more than 14 characters')
 
 
 while (1):
