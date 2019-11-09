@@ -11,7 +11,7 @@ def passwd_check(passwd):
     specht = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
     if (any(x.isupper() for x in passwd) and any(x.islower() for x in passwd) and any(
             x.isdigit() for x in passwd) and any(specht.search(passwd) for x in passwd) and len(passwd) > 10):
-        print("Password is accepted")
+        print("Password is good and accepted")
 
     else:
         if not (any(x.isupper() for x in passwd)):
