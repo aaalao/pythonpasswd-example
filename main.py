@@ -27,5 +27,4 @@ def passwd_check(passwd):
 
 
 while (1):
-    //adding a new comment
     main()
