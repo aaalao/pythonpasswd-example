@@ -3,7 +3,7 @@ import string
 
 
 def main():
-    //Comment no longer needed
+    #Comment no longer needed
     password = input("Enter Password:")
     passwd_check(password)
 
