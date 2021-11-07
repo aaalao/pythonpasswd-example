@@ -1,13 +1,6 @@
 import re
 import string
 
-
-def main():
-    #Comment no longer needed
-    password = input("Enter Password:")
-    passwd_check(password)
-
-
 def passwd_check(passwd):
     specht = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
     if (any(x.isupper() for x in passwd) and any(x.islower() for x in passwd) and any(
@@ -27,5 +20,7 @@ def passwd_check(passwd):
             print('Entered Password must contain more than 14 characters')
 
 
-while (1):
-    main()
+if __name__=="__main__":
+    #Comment no longer needed
+    password = input("Enter Password:")
+    passwd_check(password)
